@@ -23,7 +23,7 @@ T_ROW = re.compile(r"^\| `(T-\d{2})` \|")
 STOP = {"ar", "ir", "kad", "tai", "mano", "jau", "kaip", "kodel", "is",
         "bei", "ten", "nuo", "the", "and", "for", "with", "have", "what"}
 ROUTES = (
-    (r"pagav|pagaun|catch|atpazin", ("K-101", "K-104", "T-02")),
+    (r"pagav|pagau|catch|atpazin", ("K-101", "K-104", "T-02")),
     (r"korpus|liemen|pres|rank|posuk|turn|torso|inerc", ("K-104", "K-307", "T-01")),
     (r"ritm|automat|pakart|streak|serij", ("K-110", "C-03", "T-03")),
     (r"akis|akiu|zvilg|d[eė]mes|poils|pavarg|focus", ("K-109", "K-112", "T-07")),

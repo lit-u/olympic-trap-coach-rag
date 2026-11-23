@@ -1,0 +1,13 @@
+name: Verify RAG knowledge base
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run offline RAG checks
+        run: python3 -m unittest discover -p "test_*.py" -v

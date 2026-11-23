@@ -141,7 +141,7 @@ Rao 2018: 20 pradedančiųjų, po 350 VR bandymų; pirmo šūvio tikslumas pager
 
 Galimas pratimas: PREVIEW režimu pamatyti trajektoriją, tada mintyse atkurti regėjimą → kūno judesį → FIRE → follow-through; tik tada nepriklausomoje TRAINING serijoje reaguoti į nenuspėjamą lėkštelę. Teorinio aiškinimo ir klaidų nagrinėjimo **neįterpti į tą patį mintinio šūvio atlikimą**. Projekto praktinė idėja; jos efektyvumas būtent mūsų ESP32 dar netirtas. **Šaltinis:** [P-MODEL] §§12–14.
 
-### [K-112] Kvėpavimas ir širdies pulsas: jokių magiškų „tarp dūžių“
+### [K-112] Dėmesio ir akių poilsio valdymas
 **Tipas:** `OWNER-EXPERIENCE` + `HYPOTHESIS` · **Raktai:** attention recovery, eye rest, focus, fatigue, pacing, poilsis, dėmesys, akys, ritmo atstatymas.
 
 **Dėmesio ir akių poilsis tarp PULL.** Gyro leidžia itin greitai iššaudyti daug virtualių taikinių, bet šaulys pastebi, kad pavargus akims ar užsigalvojus prarandama lėkštės pasirodymo akimirka. Praktinis pasiūlymas: atitraukti žvilgsnį nuo ekrano, atsipalaiduoti, patikrinti pasirengimą ir tik tada kviesti kitą taikinį. Nėra privalomos pauzės trukmės; svarbus kokybiškas dėmesio sugrįžimas, ne greitesnis serijos užbaigimas.

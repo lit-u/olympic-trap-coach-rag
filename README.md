@@ -1,35 +1,39 @@
 # Olympic Trap AI COACH RAG
 
-Public knowledge base for the [TRAP COACH project](https://github.com/lit-u/olympic-trap-coach-rag/blob/main/RAG.md).
+Practical Olympic Trap / ESP32 Gyro coaching knowledge base, **v0.2 (2026-11-23)**.
 
-## What it does
+## Contents
 
-- `RAG.md` is the human-readable, evidence-labelled coaching corpus.
-- `retrieve.py` is a **working offline text retriever** (Python standard library, no API key). It selects 4–8 relevant K/C/T sections for a question.
-- Retrieval does **not** generate an AI answer. The selected excerpts and real session data still need to be given to an LLM. Neither the repository nor this script sends user data to an AI service.
-- A snapshot of this RAG is embedded directly in locally generated `coach.html` by the TRAP TRAINER project's `tools/coach-html` generator, so the COACH can prepare a cited prompt without internet access. This snapshot is not updated live when GitHub changes.
+- `RAG.md`: **52 retained knowledge IDs** (K/C/T). Training principles, ballistic and IMU limits, analysis safeguards, and practical drills.
+- `knowledge_index.json`: seven-field manual classification of all 52 IDs and 36 typed, curated relations.
+- `retrieve.py`: offline **BM25** text retrieval, Lithuanian/English query routing and limited knowledge-link expansion. Standard-library only, no network calls.
+- No embeddings, hosted vector database, automatic causal discovery or full Microsoft GraphRAG.
 
-## Quick test
+## Core coaching method
 
-Download or clone the repository and run:
+**CATCH → BODY TURN → CONTINUOUS FIRE → RHYTHM → CORRECT REPETITION → AUTOMATICITY.**
+
+A possible training flow is LOOK/PREVIEW to learn the range of target flights, a short block of repeated directions to feel the torso-led motion, and mixed unpredictable H1 series to test transfer. H2 can be used for relaxed rhythm practice; H3 is recreational. **H1, H2 and H3 scores must not be pooled for mastery rankings.**
+
+The Gyro observes orientation and angular speed; it **cannot tell whether the athlete actually turned the torso, focused their eyes or tensed the abdomen**. These remain practice cues / hypotheses rather than sensor-confirmed diagnoses.
+
+Static/rifle breath-holding or heartbeat-trigger timing are **not part of this Olympic Trap coaching method**. Sources are kept as internal evidence, not names or historical quotations in normal shooter-facing coaching.
+
+## Quick tests
 
 ```powershell
-python retrieve.py --query "Ar per velai pajudejau?" --top 6
-python retrieve.py --query "Kodel nepataikiau?" --top 6 --json
+python retrieve.py --query "Kaip geriau pagauti lekste ir sukti korpusa?" --top 6
+python retrieve.py --query "Pavargsta akys ir prarandu ritma" --top 6
+python retrieve.py --query "Kodel H2 pataikau o H1 ne?" --top 6 --json
+python retrieve.py --query "Ar reikia sulaikyti kvepavima?" --top 6
 ```
 
-You should see sections such as `K-301`, `K-302`, `C-04`. The result is a retrieval suggestion, not a diagnosis.
+The last query should never turn rifle breathing practice into an Olympic Trap prescription.
 
-## Using with an AI assistant
+## Limitations and integration
 
-Paste the question, the specific retrieved excerpts (with their section IDs), and your **actual** series data into the assistant. Ask it to distinguish observed facts, hypotheses and unknowns, and to give one testable coaching change. Do not claim the assistant consulted the RAG unless it was actually included or opened.
+This is a **public** repository: its entire `RAG.md` and `knowledge_index.json` can be read by anyone. The repository contains no private series, firmware, personal profiles or secrets.
 
-Direct text: https://raw.githubusercontent.com/lit-u/olympic-trap-coach-rag/main/RAG.md
+The separate private firmware project holds a **versioned copy** of its RAG; updating this public repository **does not change existing ESP32 firmware or already-exported COACH HTML**. A public offline COACH UI may distribute *prompt-only* context without bundling the corpus. Rebuilding any private copy or generated UI is a distinct integration step.
 
-## Limitations
-
-This repository intentionally contains no private sessions, firmware or secret credentials. Search is deterministic keyword retrieval, not embeddings/vector search or a hosted chat endpoint. The initial corpus is curated rather than an exhaustive copy of every conversation. Reference links and ISSF revisions must be checked independently before strong factual claims. ESP32 gyro recordings cannot reveal eye gaze, neural perception time or the human cause of a MISS.
-
-## Sync / versioning
-
-COACH can report the embedded corpus SHA256. To update the snapshot after changes to `RAG.md`, update the private project's `tools/coach-html/rag/RAG.md` copy and regenerate the standalone `coach.html`; existing saved series must be preserved by the converter. Do not silently overwrite users' records.
+All coaching claims must keep measurement limitations and source provenance internally. If a user's recorded metrics are missing, report N/A rather than pretending the training hypothesis was confirmed.

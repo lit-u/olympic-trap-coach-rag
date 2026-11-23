@@ -1,0 +1,735 @@
+{
+  "schema": "trap-gyro-knowledge-index",
+  "version": "0.2",
+  "updated": "2026-11-23",
+  "description": "Seven-field manual classification of 52 retained RAG IDs, plus curated typed links; hypotheses are not proven diagnoses.",
+  "allowed_disciplines": [
+    "TRAP",
+    "SIM_TRAP",
+    "GENERAL"
+  ],
+  "fields": [
+    "discipline",
+    "factor",
+    "phase",
+    "knowledge_kind",
+    "reliability",
+    "esp32_measurement",
+    "coach_use"
+  ],
+  "items": [
+    {
+      "id": "K-000",
+      "discipline": "TRAP",
+      "factor": "training_system",
+      "phase": "ALL",
+      "knowledge_kind": "POLICY",
+      "reliability": "CURATED_POLICY",
+      "esp32_measurement": "NOT_MEASURED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "K-101",
+      "discipline": "TRAP",
+      "factor": "visual_acquisition",
+      "phase": "ACQUIRE",
+      "knowledge_kind": "PRACTICE_OBSERVATION",
+      "reliability": "USER_REPORTED",
+      "esp32_measurement": "PROXY",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "K-102",
+      "discipline": "TRAP",
+      "factor": "movement_onset",
+      "phase": "ACQUIRE",
+      "knowledge_kind": "HYPOTHESIS",
+      "reliability": "MODEL_AND_PRACTICE",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-103",
+      "discipline": "TRAP",
+      "factor": "late_chase",
+      "phase": "MOVE",
+      "knowledge_kind": "HYPOTHESIS",
+      "reliability": "STUDY_LIMITED",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-104",
+      "discipline": "SIM_TRAP",
+      "factor": "body_turn",
+      "phase": "MOVE",
+      "knowledge_kind": "PRACTICE_OBSERVATION",
+      "reliability": "USER_REPORTED",
+      "esp32_measurement": "PROXY",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "K-105",
+      "discipline": "TRAP",
+      "factor": "angular_speed",
+      "phase": "FIRE",
+      "knowledge_kind": "HYPOTHESIS",
+      "reliability": "STUDY_LIMITED",
+      "esp32_measurement": "DIRECT",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-106",
+      "discipline": "TRAP",
+      "factor": "follow_through",
+      "phase": "FOLLOW_THROUGH",
+      "knowledge_kind": "PRACTICE_OBSERVATION",
+      "reliability": "USER_REPORTED",
+      "esp32_measurement": "DIRECT",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-107",
+      "discipline": "TRAP",
+      "factor": "trajectory_variability",
+      "phase": "PREP",
+      "knowledge_kind": "METHOD",
+      "reliability": "USER_REPORTED",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "K-108",
+      "discipline": "TRAP",
+      "factor": "shot_timing",
+      "phase": "FIRE",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_AND_PRACTICE",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-109",
+      "discipline": "TRAP",
+      "factor": "visual_attention",
+      "phase": "ACQUIRE",
+      "knowledge_kind": "STUDY_TRANSFER",
+      "reliability": "STUDY_LIMITED",
+      "esp32_measurement": "NOT_MEASURED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "K-110",
+      "discipline": "SIM_TRAP",
+      "factor": "motor_learning",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "STUDY_TRANSFER",
+      "reliability": "STUDY_LIMITED",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "K-111",
+      "discipline": "SIM_TRAP",
+      "factor": "trajectory_preview",
+      "phase": "PREP",
+      "knowledge_kind": "METHOD",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "K-112",
+      "discipline": "SIM_TRAP",
+      "factor": "attention_recovery",
+      "phase": "PREP",
+      "knowledge_kind": "PRACTICE_OBSERVATION",
+      "reliability": "USER_REPORTED",
+      "esp32_measurement": "NOT_MEASURED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "K-201",
+      "discipline": "TRAP",
+      "factor": "official_trajectory",
+      "phase": "PREP",
+      "knowledge_kind": "DOCUMENTED_RULE",
+      "reliability": "OFFICIAL_VERSIONED",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "CONTEXT_ONLY"
+    },
+    {
+      "id": "K-202",
+      "discipline": "SIM_TRAP",
+      "factor": "clay_launch_speed",
+      "phase": "ALL",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "CONTEXT_ONLY"
+    },
+    {
+      "id": "K-203",
+      "discipline": "SIM_TRAP",
+      "factor": "flight_aerodynamics",
+      "phase": "ALL",
+      "knowledge_kind": "MEASUREMENT_CONSTRAINT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "CONTEXT_ONLY"
+    },
+    {
+      "id": "K-204",
+      "discipline": "SIM_TRAP",
+      "factor": "shot_intercept",
+      "phase": "FIRE",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-205",
+      "discipline": "SIM_TRAP",
+      "factor": "pellet_ballistics",
+      "phase": "FIRE",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "CONTEXT_ONLY"
+    },
+    {
+      "id": "K-206",
+      "discipline": "SIM_TRAP",
+      "factor": "lead_geometry",
+      "phase": "FIRE",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-207",
+      "discipline": "SIM_TRAP",
+      "factor": "virtual_hit_cloud",
+      "phase": "FIRE",
+      "knowledge_kind": "MEASUREMENT_CONSTRAINT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-208",
+      "discipline": "SIM_TRAP",
+      "factor": "aim_axis_calibration",
+      "phase": "PREP",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-209",
+      "discipline": "SIM_TRAP",
+      "factor": "angular_vs_linear_speed",
+      "phase": "MOVE",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-210",
+      "discipline": "SIM_TRAP",
+      "factor": "display_fov",
+      "phase": "ALL",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "CONTEXT_ONLY"
+    },
+    {
+      "id": "K-301",
+      "discipline": "SIM_TRAP",
+      "factor": "event_timestamps",
+      "phase": "ALL",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DIRECT",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-302",
+      "discipline": "SIM_TRAP",
+      "factor": "movement_detection",
+      "phase": "ACQUIRE",
+      "knowledge_kind": "MEASUREMENT_CONSTRAINT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-303",
+      "discipline": "SIM_TRAP",
+      "factor": "angular_dynamics",
+      "phase": "MOVE",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DIRECT",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-304",
+      "discipline": "SIM_TRAP",
+      "factor": "relative_target_motion",
+      "phase": "FIRE",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-305",
+      "discipline": "SIM_TRAP",
+      "factor": "series_data",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DIRECT",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-306",
+      "discipline": "SIM_TRAP",
+      "factor": "sample_quality",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "MEASUREMENT_CONSTRAINT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DIRECT",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-307",
+      "discipline": "SIM_TRAP",
+      "factor": "sensor_limits",
+      "phase": "ALL",
+      "knowledge_kind": "MEASUREMENT_CONSTRAINT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "NOT_MEASURED",
+      "coach_use": "CONTEXT_ONLY"
+    },
+    {
+      "id": "K-308",
+      "discipline": "SIM_TRAP",
+      "factor": "two_shot_analysis",
+      "phase": "FIRE",
+      "knowledge_kind": "ENGINEERING_FACT",
+      "reliability": "MODEL_SPEC",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "K-309",
+      "discipline": "SIM_TRAP",
+      "factor": "data_provenance",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "POLICY",
+      "reliability": "CURATED_POLICY",
+      "esp32_measurement": "DIRECT",
+      "coach_use": "CONTEXT_ONLY"
+    },
+    {
+      "id": "C-01",
+      "discipline": "SIM_TRAP",
+      "factor": "record_quality",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "POLICY",
+      "reliability": "CURATED_POLICY",
+      "esp32_measurement": "DIRECT",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "C-02",
+      "discipline": "SIM_TRAP",
+      "factor": "matched_shot_comparison",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "POLICY",
+      "reliability": "CURATED_POLICY",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "C-03",
+      "discipline": "SIM_TRAP",
+      "factor": "personal_baseline_rhythm",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "HYPOTHESIS",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "C-04",
+      "discipline": "SIM_TRAP",
+      "factor": "causal_limits",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "POLICY",
+      "reliability": "CURATED_POLICY",
+      "esp32_measurement": "NOT_MEASURED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "C-05",
+      "discipline": "SIM_TRAP",
+      "factor": "onset_interpretation",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "POLICY",
+      "reliability": "CURATED_POLICY",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "C-06",
+      "discipline": "SIM_TRAP",
+      "factor": "pre_fire_braking",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "HYPOTHESIS",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "C-07",
+      "discipline": "SIM_TRAP",
+      "factor": "late_fire",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "HYPOTHESIS",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "C-08",
+      "discipline": "SIM_TRAP",
+      "factor": "speed_at_fire",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "POLICY",
+      "reliability": "CURATED_POLICY",
+      "esp32_measurement": "DIRECT",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "C-09",
+      "discipline": "SIM_TRAP",
+      "factor": "follow_through_interpretation",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "POLICY",
+      "reliability": "CURATED_POLICY",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "C-10",
+      "discipline": "SIM_TRAP",
+      "factor": "shot2_conditional_outcome",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "HYPOTHESIS",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "ANALYZE"
+    },
+    {
+      "id": "C-11",
+      "discipline": "SIM_TRAP",
+      "factor": "one_action_training",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "POLICY",
+      "reliability": "CURATED_POLICY",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "C-12",
+      "discipline": "SIM_TRAP",
+      "factor": "discipline_safety_boundary",
+      "phase": "ALL",
+      "knowledge_kind": "POLICY",
+      "reliability": "CURATED_POLICY",
+      "esp32_measurement": "NOT_MEASURED",
+      "coach_use": "DO_NOT_APPLY"
+    },
+    {
+      "id": "T-01",
+      "discipline": "SIM_TRAP",
+      "factor": "body_turn_practice",
+      "phase": "MOVE",
+      "knowledge_kind": "METHOD",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "PROXY",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "T-02",
+      "discipline": "SIM_TRAP",
+      "factor": "target_acquisition_practice",
+      "phase": "ACQUIRE",
+      "knowledge_kind": "METHOD",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "T-03",
+      "discipline": "SIM_TRAP",
+      "factor": "repetition_mixed_transfer",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "METHOD",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "T-04",
+      "discipline": "SIM_TRAP",
+      "factor": "assisted_rhythm_practice",
+      "phase": "POST_SERIES",
+      "knowledge_kind": "METHOD",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "T-05",
+      "discipline": "SIM_TRAP",
+      "factor": "second_shot_practice",
+      "phase": "FIRE",
+      "knowledge_kind": "METHOD",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "T-06",
+      "discipline": "SIM_TRAP",
+      "factor": "look_preview_practice",
+      "phase": "PREP",
+      "knowledge_kind": "METHOD",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "DERIVED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "T-07",
+      "discipline": "SIM_TRAP",
+      "factor": "attention_reset",
+      "phase": "PREP",
+      "knowledge_kind": "METHOD",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "NOT_MEASURED",
+      "coach_use": "RECOMMEND"
+    },
+    {
+      "id": "T-08",
+      "discipline": "SIM_TRAP",
+      "factor": "continuous_swing_practice",
+      "phase": "FOLLOW_THROUGH",
+      "knowledge_kind": "METHOD",
+      "reliability": "PROPOSED_TEST",
+      "esp32_measurement": "DIRECT",
+      "coach_use": "RECOMMEND"
+    }
+  ],
+  "edges": [
+    {
+      "from": "K-101",
+      "relation": "INTERPRETED_BY",
+      "to": "C-05"
+    },
+    {
+      "from": "K-101",
+      "relation": "TESTED_WITH",
+      "to": "T-02"
+    },
+    {
+      "from": "K-101",
+      "relation": "MEASURED_BY",
+      "to": "K-302"
+    },
+    {
+      "from": "K-103",
+      "relation": "INTERPRETED_BY",
+      "to": "C-06"
+    },
+    {
+      "from": "K-103",
+      "relation": "MEASURED_BY",
+      "to": "K-303"
+    },
+    {
+      "from": "K-104",
+      "relation": "TESTED_WITH",
+      "to": "T-01"
+    },
+    {
+      "from": "K-104",
+      "relation": "LIMITED_BY",
+      "to": "K-307"
+    },
+    {
+      "from": "K-104",
+      "relation": "INTERPRETED_BY",
+      "to": "C-06"
+    },
+    {
+      "from": "K-105",
+      "relation": "MEASURED_BY",
+      "to": "K-303"
+    },
+    {
+      "from": "K-105",
+      "relation": "INTERPRETED_BY",
+      "to": "C-08"
+    },
+    {
+      "from": "K-106",
+      "relation": "TESTED_WITH",
+      "to": "T-08"
+    },
+    {
+      "from": "K-106",
+      "relation": "INTERPRETED_BY",
+      "to": "C-09"
+    },
+    {
+      "from": "K-107",
+      "relation": "TESTED_WITH",
+      "to": "T-03"
+    },
+    {
+      "from": "K-107",
+      "relation": "INTERPRETED_BY",
+      "to": "C-02"
+    },
+    {
+      "from": "K-107",
+      "relation": "TESTED_WITH",
+      "to": "T-06"
+    },
+    {
+      "from": "K-108",
+      "relation": "INTERPRETED_BY",
+      "to": "C-07"
+    },
+    {
+      "from": "K-109",
+      "relation": "TESTED_WITH",
+      "to": "T-07"
+    },
+    {
+      "from": "K-109",
+      "relation": "LIMITED_BY",
+      "to": "K-307"
+    },
+    {
+      "from": "K-110",
+      "relation": "TESTED_WITH",
+      "to": "T-03"
+    },
+    {
+      "from": "K-111",
+      "relation": "TESTED_WITH",
+      "to": "T-06"
+    },
+    {
+      "from": "K-112",
+      "relation": "TESTED_WITH",
+      "to": "T-07"
+    },
+    {
+      "from": "K-112",
+      "relation": "LIMITED_BY",
+      "to": "K-307"
+    },
+    {
+      "from": "K-204",
+      "relation": "INTERPRETED_BY",
+      "to": "C-04"
+    },
+    {
+      "from": "K-207",
+      "relation": "INTERPRETED_BY",
+      "to": "C-01"
+    },
+    {
+      "from": "K-207",
+      "relation": "TESTED_WITH",
+      "to": "T-04"
+    },
+    {
+      "from": "K-308",
+      "relation": "INTERPRETED_BY",
+      "to": "C-10"
+    },
+    {
+      "from": "C-03",
+      "relation": "TESTED_WITH",
+      "to": "T-03"
+    },
+    {
+      "from": "C-03",
+      "relation": "TESTED_WITH",
+      "to": "T-04"
+    },
+    {
+      "from": "C-10",
+      "relation": "TESTED_WITH",
+      "to": "T-05"
+    },
+    {
+      "from": "K-303",
+      "relation": "LIMITED_BY",
+      "to": "K-306"
+    },
+    {
+      "from": "K-103",
+      "relation": "SUPPORTED_BY",
+      "to": "S-CAUSER-2010"
+    },
+    {
+      "from": "K-109",
+      "relation": "SUPPORTED_BY",
+      "to": "S-CAUSER-2010"
+    },
+    {
+      "from": "K-110",
+      "relation": "SUPPORTED_BY",
+      "to": "S-RAO-2018"
+    },
+    {
+      "from": "K-201",
+      "relation": "SUPPORTED_BY",
+      "to": "S-ISSF-2026"
+    },
+    {
+      "from": "K-104",
+      "relation": "SUPPORTED_BY",
+      "to": "P-MODEL"
+    },
+    {
+      "from": "K-303",
+      "relation": "SUPPORTED_BY",
+      "to": "P-DYNAMICS"
+    }
+  ],
+  "retrieval_policy": {
+    "first": "Check discipline, selected simulator mode, available measurements and quality flags.",
+    "then": "Retrieve by terms and manually verified links; never treat a graph edge as a causal relation.",
+    "present": "Coach speaks practical Lithuanian without authors or literature citations by default; preserve ID provenance internally.",
+    "exclude": [
+      "Static/rifle breathing-hold or heartbeat-based timing prescriptions",
+      "Assuming one IMU diagnoses eye gaze, attention, abdominal activation or whether hands versus torso moved",
+      "Treating H2/H3 assisted HIT as equivalent to H1 HIT",
+      "Treating post-FIRE movement as changing an already-fired shot"
+    ]
+  }
+}
